@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body p h1 h2 h4 h5 h3 {
+    font-family: "OpenSans";
+}
+header{
+    width: 100%;
+    background-color: rgb(118, 199, 192);
+    display: flex;
+}
+.header_logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+    animation-name: anim6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes anim6 {
+    from{ transform: rotateY(0deg)}
+    to{transform: rotateY(360deg)}
+
+}
+
+nav{
+    margin-left: 25%;
+    margin-top: 56px;
+    text-transform: uppercase;
+}
+.topnav{
+    display: flex;
+    justify-content: space-around;
+    animation-name: anim6;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.topnav:hover{
+    animation-name: none;
+}
+.topnav a{
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    animation-name: anim6;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animRotate {
+  from{transform: rotateX(0deg)}
+    to{ transform: rotateX(360deg)}
+}
+.topnav a:hover{
+    border-bottom: 3px solid orangered;
+    animation-name: animRotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+    
+}
+.topnav .icon{
+    display: none;
+}
+.header_logo b{
+    font-size: 40px;
+}
+.main_portfolio{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(127, 140, 140);
+    padding: 30px 0px 30px 0px;
+}
+.main_portfolio h1{
+    font-size: 28px;
+    margin-left: 180px;
+}
+.main_portfolio p{
+    margin-right: 40px;
+}
+.main_about{
+    width: 100%;
+    background-color: rgb(210, 236, 220);
+    display: flex;
+    flex-direction: row;
+
+
+}
+.main_right{
+    width: 45%;
+    float: left;
+    margin-left: 80px;
+
+}
+.main_left{
+    width: 45%;
+    float: right;
+    margin-top: 50px;
+}
+.main_img{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes anim1 {
+    from{transform: rotate(0deg) scale(0)}
+    to{ transform: rotate(360deg) scale(1)}
+}
+.main_img img{
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 300px;
+    width: 450px;
+    margin: 20px 0px 20px 0px;
+}
+.main_button button{
+    background: grey;
+    color: white;
+    padding: 7px 3px 7px 3px;
+    margin: 20px 7px 20px 7px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+.main_button button:hover{
+    background: red;
+    cursor: pointer;
+}
+section{
+    margin-top: 20px;
+}
+section img{
+    background: green;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.section_nav button{
+    background-color: rgb(118, 199, 192);
+    padding: 10px;
+    border: 1px solid rgb(118, 199, 192);
+    cursor: pointer;
+
+
+}
+.section_nav button:hover{
+    background: red;
+}
+.section_nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.section_nav img{
+    height: 30px;
+    width: 30px;
+}
+
+
+label{
+    margin-right: 350px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+img:hover + label{
+    color: red;
+
+}
+img:hover{
+    background-color: red;
+    cursor: pointer;
+}
+label:hover{
+    color: red;
+}
+section h1{
+    margin-bottom: 20px;
+}
+section p{
+    margin-bottom: 100px;
+}
+.section_nav{
+    margin-bottom: 70px;
+}
+.section_nav_bottom{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(210, 236, 220);
+}
+.section_nav_bottom button{
+ color: white;
+    background: grey;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+.section_nav_bottom button:hover{
+    background: red;
+
+}
+footer{
+    background-color: rgb(118, 199, 192);
+
+}
+#MODUS{
+width: 30%;
+    color: white;
+}
+#MODUS h1{
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+#MODUS p{
+    margin: 20px 10px 20px 10px;
+
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#company li{
+    margin: 10px 5px 10px 5px;
+}
+#Community li{
+    margin: 10px 5px 10px 5px;
+}
+#Blog img{
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+
+}
+.blog_about1{
+    display: flex;
+    flex-direction: row;
+}
+.blog_text1{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#Blog_p{
+    font-size: 28px;
+    color: white;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-around;
+
+}
+.f1{
+    margin-top: 40px;
+}
+.blog_about2{
+    display: flex;
+    flex-direction: row;
+}
+.blog_text2{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.f1 h2, a, h5  {
+    color: white;
+}
+.fotter_buttom{
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #6ab3ac;
+    align-items: center;
+    height: 60px;
+
+}
+.fotter_buttom p{
+    margin-left: 55px;
+}
+.fb_img{
+    margin-right: 55px;
+}
+.fb_img img{
+    margin-right: 10px;
+}
+#Blog img:hover{
+
+}
+#company h2{
+ color: rgba(0, 0, 0, 0.502);
+
+}
+#Community h2{
+    color: rgba(0, 0, 0, 0.502);
+
+}
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 1500px){
+    .topnav{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main_about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+     #wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 300px;
+    }
+}
