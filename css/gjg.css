@@ -1,0 +1,12 @@
+.Path {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    position: absolute;
+    left: 653px;
+    top: 200px;
+    width: 110px;
+    height: 30px;
+    z-index: 134;
+}
+
