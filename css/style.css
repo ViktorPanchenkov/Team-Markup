@@ -11,10 +11,14 @@ li{
 body p h1 h2 h4 h5 h3 {
     font-family: "OpenSans";
 }
+
 header{
     width: 100%;
+    height: 76px;
     background-color: rgb(118, 199, 192);
     display: flex;
+    align-items: center;
+
 }
 .header_logo{
     text-transform: uppercase;
@@ -22,8 +26,8 @@ header{
     font-weight: 800;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 56px;
-    margin-left: 12%;
+
+    margin-left: 8%;
     animation-name: anim60;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -38,7 +42,7 @@ header{
 
 nav{
     margin-left: 25%;
-    margin-top: 56px;
+
     text-transform: uppercase;
 }
 .topnav{
@@ -48,6 +52,33 @@ nav{
     animation-duration: 4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+.topnav ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu_drop{
+    position: absolute;
+
+
+}
+.menu_drop li{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+
+}
+.menu__list:hover .menu_drop li {
+ opacity: 1;
+}
+.menu__list{
+    position: relative;
+    background: #6ab3ac;
+   padding: 2px;
+    border-radius: 5px;
+}
+.menu__list li{
+    background: #6ab3ac;
 }
 select{
     background-color: #62a29e;
@@ -89,23 +120,33 @@ select{
 .header_logo b{
     font-size: 40px;
 }
-.main_portfolio{
+.heading{
     background-color: rgb(236, 236, 236);
     display: flex;
     justify-content: space-between;
     color: rgb(127, 140, 140);
     padding: 30px 0px 30px 0px;
 }
-.main_portfolio h1{
+.heading h1{
     font-size: 28px;
     margin-left: 180px;
 }
-.main_portfolio p{
+.heading ul{
     margin-right: 40px;
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+}
+.breadcrumb li{
+    margin-left: 5px;
+}
+.breadcrumb a{
+    color: grey;
 }
 .main_about{
     width: 100%;
-    background-color: rgb(210, 236, 220);
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
 
@@ -116,11 +157,13 @@ select{
     float: left;
     margin-left: 80px;
 
+
 }
 .main_left{
     width: 45%;
     float: right;
     margin-top: 50px;
+
 }
 .main_img{
     display: flex;
@@ -139,7 +182,11 @@ select{
     width: 450px;
     margin: 20px 0px 20px 0px;
 }
-.main_button button{
+.main_button ul{
+    display: flex;
+    flex-direction: row;
+}
+.main_button li{
     background: grey;
     color: white;
     padding: 7px 3px 7px 3px;
@@ -147,12 +194,17 @@ select{
     border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
 }
-.main_button button:hover{
+.main_button a{
+    padding: 3px;
+}
+.main_button li:hover{
     background: #62a29e;
     cursor: pointer;
 }
+
 section{
     margin-top: 20px;
+    background: #f3f3f3;
 }
 section img{
     background: green;
@@ -210,20 +262,28 @@ section p{
 .section_nav{
     margin-bottom: 70px;
 }
-.section_nav_bottom{
+.pagination{
     display: flex;
     justify-content: center;
-    background-color: rgb(210, 236, 220);
+    background-color: #f3f3f3;
+    flex-direction: row;
+
 }
-.section_nav_bottom button{
- color: white;
+.pagination ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.pagination li{
+    color: white;
     background: grey;
     padding: 10px;
     margin: 10px 5px 10px 5px;
     border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
 }
-.section_nav_bottom button:hover{
+.pagination li:hover{
     background: red;
 
 }
@@ -273,7 +333,7 @@ width: 30%;
     color: white;
 }
 
-#fotter_Wrap{
+#fotter_wrap{
     display: flex;
     justify-content: space-around;
 
@@ -306,10 +366,10 @@ width: 30%;
 .fotter_buttom p{
     margin-left: 55px;
 }
-.fb_img{
+.social-network{
     margin-right: 55px;
 }
-.fb_img img{
+.social-network img{
     margin-right: 10px;
 }
 #Blog img:hover{
@@ -361,9 +421,14 @@ width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 200px;
     }
     .topnav{
         margin-right: 60px;
+    }
+    .topnav ul{
+        display: flex;
+        flex-direction: column;
     }
     .header_logo p {
         font-size: 16px;

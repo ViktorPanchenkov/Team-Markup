@@ -1,12 +1,11 @@
-.Path {
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.2;
+.Home_______Podtfolio {
+    font-size: 12px;
+    font-family: "OpenSans";
+    color: rgb(127, 140, 140);
+    line-height: 1.2;
+    text-align: left;
     position: absolute;
-    left: 653px;
-    top: 200px;
-    width: 110px;
-    height: 30px;
-    z-index: 134;
+    left: 1224.937px;
+    top: 129.192px;
+    z-index: 147;
 }
-

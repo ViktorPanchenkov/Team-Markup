@@ -11,39 +11,50 @@
 </head>
 <body>
 <header>
-    <div class="header_logo"><p><b>MODUS</b>versus</p></div>
+    <div class="header_logo"><a href="#"><p><b>MODUS</b>versus</p></a></div>
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="#"> Home</a>
-            <a href="#"> About</a>
-            <a href="#">Services</a>
-            <select>
-                <option>
-                    <a href="#"> PORTFOLIO</a>
-                </option>
-            </select>
-            <a href="#"> BLOG</a>
-            <a href="#"> FEATURES </a>
-            <a href="#">Contact</a>
-            <a href="#"><img src="img/поиск.png"></a>
-            <a href="#" id="menu" class="icon">&#9776</a>
-
+            <ul>
+           <li> <a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li class="menu__list"><a href="#"> PORTFOLIO</a>
+                 <ul class="menu_drop">
+                     <li><a href="#"> Picture</a></li>
+                     <li><a href="#"> Girls</a></li>
+                     <li><a href="#"> World of Tanks</a></li>
+                     <li><a href="#"> How  are you?</a></li>
+                 </ul>
+                </li>
+                <li><a href="#"> BLOG</a></li>
+                <li> <a href="#"> FEATURES </a></li>
+                <li> <a href="#">Contact</a></li>
+                <li><a href="#"><img src="img/поиск.png"></a></li>
+                <li> <a href="#" id="menu" class="icon">&#9776</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 <main>
-    <div class="main_portfolio">
+    <div class="heading">
         <h1>PORTFOLIO</h1>
-        <p> Home   /   Podtfolio</p>
+        <ul class="breadcrumb" >
+            <li class="activ"> Home </li>
+            <li> / </li>
+            <li><a href="#"> Portfolio</a></li>
+        </ul>
+
     </div>
     <div class="main_about">
     <div class="main_right">
     <div class="main_button">
-        <button>ALL</button>
-        <button>WEB DESIGN</button>
-        <button>LOGO DESIGN</button>
-        <button>PHOTOGRAPHY</button>
-        <button>WORDPRESS</button>
+        <ul>
+            <li><a href="#"> All </a></li>
+            <li><a href="#"> WEB DESIGN</a></li>
+            <li><a href="#">LOGO DESIGN</a></li>
+            <li><a href="#">PHOTOGRAPHY</a></li>
+            <li><a href="#">WORDPRESS</a></li>
+        </ul>
     </div>
         <div class="main_img">
         <img src="img/Epam.png">
@@ -108,23 +119,25 @@
 
     </div>
     </div>
-    <div class="section_nav_bottom">
-        <button> < </button>
-        <button> 1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>...</button>
-        <button>10</button>
-        <button>11</button>
-        <button>12</button>
-        <button> > </button>
+    <div class="pagination">
+        <ul>
+        <li><a href="#"> < </a></li>
+         <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+            <li><a href="#"> > </a></li>
+        </ul>
 
     </div>
 </main>
 <footer>
-<div id="fotter_Wrap">
+<div id="fotter_wrap">
     <div id="MODUS" class="f1">
         <h1> MODUSversus</h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -157,14 +170,14 @@
     <div id="Blog" class="f1">
         <p id="Blog_p"> <em> from the</em> BLOG</p>
         <div class="blog_about1">
-        <img src="img/.png">
+        <img src="img/Team%20international.png">
             <div class="blog_text1">
             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
             <p> 26 May, 2013</p>
         </div>
         </div>
         <div class="blog_about2">
-            <img src="img/.png">
+            <img src="img/AS55K3.jpg">
             <div class="blog_text2">
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                 <p> 26 May, 2013</p>
@@ -178,7 +191,7 @@
 </div>
     <div class="fotter_buttom">
         <p> 2013  ModusVersus</p>
-        <div class="fb_img">
+        <div class="social-network">
             <a href="#"><img src="img/F.png"></a>
             <a href="#"><img src="img/T.png"></a>
             <a href="#"> <img src="img/Composite%20Path.png"></a>
