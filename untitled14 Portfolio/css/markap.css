@@ -1,0 +1,481 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body p h1 h2 h4 h5 h3 {
+    font-family: "OpenSans";
+}
+
+header{
+    width: 100%;
+    height: 76px;
+    background-color: rgb(118, 199, 192);
+    display: flex;
+    align-items: center;
+
+}
+.header_logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+
+    margin-left: 8%;
+    animation-name: anim6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes anim6 {
+    from{ transform: rotateY(0deg)}
+    to{transform: rotateY(360deg)}
+
+}
+
+nav{
+    margin-left: 25%;
+
+    text-transform: uppercase;
+}
+.topnav{
+    display: flex;
+    justify-content: space-around;
+    animation-name: anim6;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.topnav ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu_drop{
+    position: absolute;
+
+
+}
+.menu_drop li{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+
+}
+.menu__list:hover .menu_drop li {
+    opacity: 1;
+}
+.menu__list{
+    position: relative;
+    background: #6ab3ac;
+    padding: 2px;
+    border-radius: 5px;
+}
+.menu__list li{
+    background: #6ab3ac;
+}
+select{
+    background-color: #62a29e;
+    color: white;
+    border: 1px solid #62a29e;
+    border-radius: 7px 7px 7px 7px;
+
+
+}
+.topnav:hover{
+    animation-name: none;
+}
+.topnav a{
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    animation-name: anim6;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animRotate {
+    from{transform: rotateX(0deg)}
+    to{ transform: rotateX(360deg)}
+}
+.topnav a:hover{
+    border-bottom: 3px solid orangered;
+    animation-name: animRotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+
+}
+.topnav .icon{
+    display: none;
+}
+.header_logo b{
+    font-size: 40px;
+}
+.heading{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(127, 140, 140);
+    padding: 30px 0px 30px 0px;
+}
+.heading h1{
+    font-size: 28px;
+    margin-left: 180px;
+}
+.heading ul{
+    margin-right: 40px;
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+}
+.breadcrumb li{
+    margin-left: 5px;
+}
+.breadcrumb a{
+    color: grey;
+}
+.main_about{
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.main_right{
+    width: 45%;
+    float: left;
+    margin-left: 80px;
+
+
+}
+.main_left{
+    width: 45%;
+    float: right;
+    margin-top: 50px;
+
+}
+.main_img{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes anim1 {
+    from{transform: rotate(0deg) scale(0)}
+    to{ transform: rotate(360deg) scale(1)}
+}
+.main_img img{
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 300px;
+    width: 450px;
+    margin: 20px 0px 20px 0px;
+}
+.main_button ul{
+    display: flex;
+    flex-direction: row;
+}
+.main_button li{
+    background: grey;
+    color: white;
+    padding: 7px 3px 7px 3px;
+    margin: 20px 7px 20px 7px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+.main_button a{
+    padding: 3px;
+}
+.main_button li:hover{
+    background: #62a29e;
+    cursor: pointer;
+}
+
+section{
+    margin-top: 20px;
+    background: #f3f3f3;
+}
+section img{
+    background: green;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.section_nav button{
+    background-color: rgb(118, 199, 192);
+    padding: 10px;
+    border: 1px solid rgb(118, 199, 192);
+    cursor: pointer;
+
+
+}
+.section_nav button:hover{
+    background: red;
+}
+.section_nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.section_nav img{
+    height: 30px;
+    width: 30px;
+}
+
+
+section a{
+    margin-right: 350px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(127, 140, 140);
+    font-family: "OpenSans";
+}
+section img:hover + a{
+    color: red;
+
+}
+section img:hover{
+    background-color: red;
+    cursor: pointer;
+}
+section a:hover{
+    color: red;
+}
+section h1{
+    margin-bottom: 20px;
+}
+section p{
+    margin-bottom: 100px;
+}
+.section_nav{
+    margin-bottom: 70px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    flex-direction: row;
+
+}
+.pagination ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.pagination li{
+    color: white;
+    background: grey;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+.pagination li:hover{
+    background: red;
+
+}
+footer{
+    background-color: rgb(118, 199, 192);
+
+}
+#MODUS{
+    width: 30%;
+    color: white;
+}
+#MODUS h1{
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+#MODUS p{
+    margin: 20px 10px 20px 10px;
+
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#company li{
+    margin: 10px 5px 10px 5px;
+}
+#Community li{
+    margin: 10px 5px 10px 5px;
+}
+#Blog img{
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+
+}
+.blog_about1{
+    display: flex;
+    flex-direction: row;
+}
+.blog_text1{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#Blog_p{
+    font-size: 28px;
+    color: white;
+}
+
+#fotter_wrap{
+    display: flex;
+    justify-content: space-around;
+
+}
+.f1{
+    margin-top: 40px;
+}
+.blog_about2{
+    display: flex;
+    flex-direction: row;
+}
+.blog_text2{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.f1 h2, a, h5  {
+    color: white;
+}
+.fotter_buttom{
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #6ab3ac;
+    align-items: center;
+    height: 60px;
+
+}
+.fotter_buttom p{
+    margin-left: 55px;
+}
+.social-network{
+    margin-right: 55px;
+}
+.social-network img{
+    margin-right: 10px;
+}
+#Blog img:hover{
+
+}
+#company h2{
+    color: rgba(0, 0, 0, 0.502);
+
+}
+#Community h2{
+    color: rgba(0, 0, 0, 0.502);
+
+}
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 1500px){
+    .topnav{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main_about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+    .main_right{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #fotter_Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .topnav{
+        margin-right: 60px;
+    }
+    .topnav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header_logo p {
+        font-size: 16px;
+    }
+    .main_portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_portfolio h1 {
+        margin-right: 100px;
+    }
+    .main_portfolio p{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    .main_right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_button{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .main_img{
+        align-items: center;
+    }
+    .main_left{
+        align-items: center;
+        margin-left: 50px;
+    }
+    .section_nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_nav a{
+        margin: 20px 0px 20px 0px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #fotter_Wrap{
+        margin-left: 60px;
+        align-items: center;
+    }
+}
